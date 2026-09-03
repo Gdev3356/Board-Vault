@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:16-alpine'
+    environment:
+      POSTGRES_DB: 'boardvault'
+      POSTGRES_USER: 'boardvault'
+      POSTGRES_PASSWORD: 'boardvault'
+    ports:
+      - "5432:5432"
